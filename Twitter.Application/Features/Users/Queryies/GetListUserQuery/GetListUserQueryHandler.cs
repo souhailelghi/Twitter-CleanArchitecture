@@ -12,12 +12,12 @@ namespace Twitter.Application.Features.Users.Queryies.GetListUserQuery
 {
     public class GetListUserQueryHandler : IRequestHandler<GetListUserQuery, List<User>>
     {
-        private readonly IUnitOfService _unitOfService;
+        //private readonly IUnitOfService _unitOfService;
         private readonly IUnitOfWork _unitOfWork;
 
-        public GetListUserQueryHandler(IUnitOfService unitOfService , IUnitOfWork unitOfWork)
+        public GetListUserQueryHandler( IUnitOfWork unitOfWork)
         {
-            _unitOfService = unitOfService;
+            //_unitOfService = unitOfService;
             _unitOfWork = unitOfWork;
         }
         

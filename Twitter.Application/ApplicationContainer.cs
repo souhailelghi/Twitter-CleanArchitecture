@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Twitter.Application.Features.Users.Queryies.GetListUserQuery;
 using Twitter.Application.IServices;
 using Twitter.Application.Servecies;
-using Twitter.Application.Servecies.UnitOfServices;
+//using Twitter.Application.Servecies.UnitOfServices;
 
 namespace Twitter.Application
 {
@@ -19,7 +19,7 @@ namespace Twitter.Application
         {
             //configuration of mediator
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IUnitOfService, UnitOfService>();
+            //services.AddTransient<IUnitOfService, UnitOfService>();
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             return services;
         }
